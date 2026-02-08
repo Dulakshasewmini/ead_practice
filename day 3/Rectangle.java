@@ -7,38 +7,19 @@ class Circle {
 void drawCircle() {
 // Code to draw a circle
 }
-}interface Document {
-void print();
-void scan();
-void fax();
+interface Shape {
+void draw();
 }
-class SimplePrinter implements Document {
+class Rectangle implements Shape {
 @Override
-public void print() {
-// Print the document
+public void draw() {
+// Code to draw a rectangle
 }
+}
+class Square implements Shape {
 @Override
-public void scan() {
-// Not applicable for
-SimplePrinter
+public void draw() {
+// Code to draw a square
 }
-@Override
-public void fax() {
-// Not applicable for
-SimplePrinter
-}
-}
-class Photocopier implements Document {
-@Override
-public void print() {
-// Print the document
-}
-@Override
-public void scan() {
-// Scan the documente
-}
-@Override
-public void fax() {
-// Fax the document
 }
 }
